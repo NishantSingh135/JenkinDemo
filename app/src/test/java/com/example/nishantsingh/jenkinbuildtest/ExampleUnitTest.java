@@ -18,7 +18,7 @@ public class ExampleUnitTest {
 
     @Test
     public void Substraction_isCorrect() throws Exception {
-        assertEquals(4, 8 - 4);
+        assertEquals(3, 8 - 5);
     }
 
 }
