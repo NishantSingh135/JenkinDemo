@@ -1,4 +1,11 @@
 apply plugin: 'com.android.application'
+apply plugin: "net.saliman.cobertura"
+cobertura {
+    coverageFormats = ['html', 'xml']
+    coverageIgnoreTrivial = true
+    coverageIgnores = ['org.slf4j.Logger.*']
+    coverageReportDir = new File("$buildDir/reports/cobertura")
+}
 
 android {
     compileSdkVersion 25
